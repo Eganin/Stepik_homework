@@ -6,6 +6,7 @@ try:
     browser = webdriver.Chrome()
     browser.get(link)
 
+    # поиск полей
     input1 = browser.find_element_by_css_selector('div.first_block input.first')
     input1.send_keys('Ivan')
 
